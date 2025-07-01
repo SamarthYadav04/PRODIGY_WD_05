@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="themeBtn">Toggle Theme</button>
+  </div>
+
+  <div class="app-container">
+    <h1>🌤️ Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter City" />
+    <button onclick="getWeatherByCity()">Search</button>
+    <button onclick="getWeatherByLocation()">📍 Use My Location</button>
+
+    <div id="forecast" class="forecast-grid"></div>
+    <canvas id="tempChart" width="400" height="200"></canvas>
+
+    <div id="details"></div>
+    <div id="tip" class="tip-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
